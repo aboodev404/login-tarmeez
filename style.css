@@ -1,0 +1,91 @@
+/*------- Variables -------*/
+:root {
+	--main-color: #F76F01;
+	--secondary-color: #111629;
+    --section-padding: 60px;
+    --section-background: #eaf0f9;
+    --color-white: #fff;
+    --icon-main-color: #111629;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 15px;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+/*------- Global Rules -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    height: 100vh;
+    background-color: var(--section-background);
+}
+.card {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+h4 {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    color: #252733;
+    margin: 10px;
+    padding: 15px 0;
+}
+.text-black {
+    padding: var(--card-padding);
+}
+input {
+    background-color: var(--section-background) !important;
+    color: var(--secondary-color) !important;
+    outline: none !important;
+}
+input[type='password'] {
+    position: relative !important; 
+}
+span {
+    position: absolute;
+    right: 65px;
+    transform: translateY(412%);
+    top: 50%;
+    cursor: pointer;
+}
+button {
+    width: 100%;
+    color: var(--color-white) !important;
+    background-color: var(--main-color) !important;
+    border: none !important;
+}
+input:focus{
+    border-color: var(--main-color) !important;
+    box-shadow: 0 0 3px var(--main-color) !important;
+}
+a {
+    text-decoration: none;
+}
+/* ------- Overlay  -------*/
+.overlay-image {
+    position: relative;
+    justify-content: center;
+}
+.overlay-image img {
+    width: 85%;
+}
+
+@media screen and (max-width: 992px) {
+    #overlay-image {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 767.9px) {
+    span {
+        right: 32px;
+    }
+}
